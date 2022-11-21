@@ -1,0 +1,66 @@
+@use "../abstracts/colors" as cols;
+@use "../abstracts/variables" as vars;
+@use "../abstracts/typography" as type;
+
+$header-height: 122px;
+
+header {
+   z-index: 100;
+   height: $header-height;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: grid;
+   grid-template-rows: 2fr 1fr;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.363);
+
+   nav {
+      background-color: cols.$secondary-color;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-inline: vars.$inline-padding;
+
+      h3 {
+         color: white;
+         font-size: type.$body-fontsize;
+         font-weight: 400;
+         user-select: none;
+      }
+   }
+
+   .filter-container {
+      background-color: cols.$offwhite;
+      padding-inline: vars.$inline-padding;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .button-container {
+         background-color: cols.$secondary-color;
+         padding: 5px;
+         padding-left: 15px;
+         border-radius: 20px;
+         display: flex;
+         gap: 8px;
+         align-items: center;
+         cursor: pointer;
+
+         span {
+            font-size: type.$sub-fontsize;
+            color: white;
+            user-select: none;
+         }
+
+         .circle {
+            background-color: white;
+            border-radius: 50%;
+            height: 15px;
+            width: 15px;
+            display: grid;
+            place-content: center;
+         }
+      }
+   }
+}

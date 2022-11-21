@@ -1,0 +1,18 @@
+// use
+@use "../base/header" as header;
+
+// variables
+$top-padding: header.$header-height;
+$bottom-padding: 0;
+$section-padding: 0;
+
+.fullscreen-container > section {
+   height: 100%;
+   min-width: 100%;
+   display: grid;
+   place-items: center;
+   padding: $section-padding;
+   padding-top: $top-padding;
+   padding-bottom: $bottom-padding;
+}
+

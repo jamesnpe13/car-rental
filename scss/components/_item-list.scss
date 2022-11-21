@@ -1,0 +1,126 @@
+/*
+   <div class="item-list">
+      <!-- item -->
+      <div class="item span">
+            <img src="./images/cars/car1.png" class="image-thumbnail" />
+
+            <div class="text-container">
+               <h4>Car Model 2015</h4>
+               <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+
+            <div class="bar">
+               <img src="./images/icons/back-icon.svg" alt="" />
+            </div>
+      </div>
+   </div>
+*/
+
+@use "../abstracts/variables" as vars;
+@use "../abstracts/colors" as cols;
+@use "../abstracts/typography" as type;
+
+$thumbnail-height-max: 60px;
+$thumbnail-width-max: 100px;
+
+.item-list {
+   width: 100%;
+   height: auto;
+   align-items: center;
+}
+
+.item {
+   // box-shadow: 3px 3px 60px rgba(0, 0, 0, 0.158);
+   background-color: white;
+   border-radius: vars.$border-radius-1;
+   user-select: none;
+   cursor: pointer;
+
+   .image-thumbnail {
+      width: $thumbnail-width-max;
+      height: $thumbnail-height-max;
+      object-fit: contain;
+   }
+
+   h4 {
+      font-size: type.$body-fontsize;
+      color: cols.$secondary-color;
+      user-select: none;
+   }
+
+   span {
+      font-size: type.$sub-fontsize;
+      color: cols.$secondary-color;
+      user-select: none;
+   }
+
+
+}
+
+// span
+.item-list.span {
+   width: 95%;
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 15px;
+
+   .item {
+      height: 80px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+
+      .image-thumbnail {
+         transform: translateX(-20px);
+      }
+
+      .bar {
+         background-color: cols.$secondary-color;
+         height: 100%;
+         width: 30px;
+         display: grid;
+         place-content: center;
+         margin-left: 10px;
+         border-radius: 0 vars.$border-radius-1 vars.$border-radius-1 0;
+
+         img {
+            transform: rotate(180deg);
+            width: 8px;
+         }
+      }
+   }
+}
+
+// thumb
+.item-list.thumb {
+   width: 95%;
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 15px;
+
+   .item {
+      height: 80px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+
+      .image-thumbnail {
+         transform: translateX(-20px);
+      }
+
+      .bar {
+         background-color: cols.$secondary-color;
+         height: 100%;
+         width: 30px;
+         display: grid;
+         place-content: center;
+         margin-left: 10px;
+         border-radius: 0 vars.$border-radius-1 vars.$border-radius-1 0;
+
+         img {
+            transform: rotate(180deg);
+            width: 8px;
+         }
+      }
+   }
+}

@@ -1,0 +1,36 @@
+/*========================================
+         TEMPORARY - REMOVE LATER
+========================================*/
+
+// .box-container {
+//    display: grid;
+//    grid-template-columns: 1fr;
+
+//    .content-container {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 10px;
+//    }
+// }
+
+// .fullscreen-container {
+//    overflow-x: scroll;
+// }
+
+// .fullscreen-container > section:nth-child(odd) {
+//    background-color: rgb(210, 213, 226);
+// }
+
+// transitions
+// [data-hidden="false"] {
+//    opacity: 1;
+//    transform: translateY(0);
+//    transition: 0.2s ease-in-out;
+//    scale: 1;
+// }
+[data-hidden="true"] {
+   transition: 0.2s cubic-bezier(.6,0,.83,.67);
+   opacity: 0;
+   transform: translateY(100px);
+   scale: 0.95;
+}

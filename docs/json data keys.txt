@@ -1,0 +1,10 @@
+make
+model
+year
+description
+mileage
+colour
+price
+drive type
+seating capacity
+transmission
