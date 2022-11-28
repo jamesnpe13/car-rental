@@ -3,7 +3,7 @@
    width: 100vw;
    display: flex;
    overflow-x: hidden;
-   overflow-y: hidden;
+   overflow-y: scroll;
    scroll-behavior: auto;
    position: relative;
 }

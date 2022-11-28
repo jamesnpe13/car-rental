@@ -5,7 +5,10 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="./css/main.css" />
-      <script defer src="./js/script.js"></script>
+
+      <!-- font awesome -->
+      <script src="https://kit.fontawesome.com/69e625b01a.js" crossorigin="anonymous"></script>
+
       <title>Car rental | Summative 2</title>
    </head>
    <body>
@@ -76,11 +79,40 @@
             </div>
          </section>
          <!-- page end -->
+         <!-- ======================================================== -->
+         <!-- ======================================================== -->
+         <!-- ======================================================== -->
+         <!-- ======================================================== -->
          <!-- page -->
-         <section class="" id="page-3">
-            <h1>page 3</h1>
+         <section class="" id="route-calc">
+            <!-- map -->
+            <div id="map"></div>
+
+            <!-- waypoints -->
+            <div class="map-input-container">
+               <div class="text-container">
+                  <h4 class="header4">Travel route</h4>
+
+                  <span class="total-distance">15km</span>
+               </div>
+
+               <div class="waypoint-container">
+                  <div class="map-waypoint" data-value="Waypoint value">
+                     <span>Start/end: Car rental address</span>
+                  </div>
+               </div>
+
+               <div class="new-waypoint-container">
+                  <input type="text" class="map-input-text" placeholder="Enter location" />
+                  <button class="add-waypoint-button hidden"><span>Add</span></button>
+               </div>
+            </div>
          </section>
          <!-- page end -->
+         <!-- ======================================================== -->
+         <!-- ======================================================== -->
+         <!-- ======================================================== -->
+         <!-- ======================================================== -->
          <!-- page -->
          <section class="" id="target-page">
             <div class="box-container blank">
@@ -89,5 +121,11 @@
          </section>
          <!-- page end -->
       </div>
+      <!-- script -->
+      <script src="./js/script.js"></script>
+      <!-- maps api and libraries -->
+
+      <script src="./js/route-calc.js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgSAtjlaYWfWWMUWsK5ud455V_YVhi7Z4&callback=initMap&libraries=&v=weekly"></script>
    </body>
 </html>

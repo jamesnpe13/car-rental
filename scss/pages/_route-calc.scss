@@ -1,0 +1,81 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/colors" as cols;
+
+#route-calc {
+   gap: 20px;
+}
+
+#map {
+   min-height: 250px;
+   min-width: 100%;
+   border-radius: vars.$border-radius-1;
+}
+.map-input-container {
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding-bottom: 200px;
+
+   .text-container {
+      display: flex;
+      justify-content: space-between;
+
+      .total-distance {
+         font-size: 1.5em;
+         color: rgb(51, 51, 51);
+      }
+   }
+
+   .waypoint-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .map-waypoint {
+         $waypoint-color: rgb(150, 150, 150);
+         background-color: transparent;
+         color: $waypoint-color;
+         user-select: none;
+         font-size: 1.1em;
+         padding: 10px 20px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         border: 1px solid $waypoint-color;
+         border-radius: vars.$border-radius-1;
+      }
+      .map-waypoint:not(.user) {
+         border: none;
+      }
+   }
+
+   .new-waypoint-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .map-input-text {
+         width: 100%;
+         border: 1px solid cols.$primary-color;
+         font-size: 1.1em;
+         padding: 10px 20px;
+         border-radius: vars.$border-radius-1;
+      }
+      .add-waypoint-button {
+         display: block;
+         width: 100%;
+         border: 1px solid cols.$primary-color;
+         border: none;
+         background-color: cols.$tertiary-color;
+         font-size: 1.1em;
+         padding: 10px;
+         border-radius: vars.$border-radius-1;
+         color: white;
+      }
+      .add-waypoint-button.hidden {
+         display: none;
+      }
+   }
+}

@@ -62,7 +62,7 @@ function createVehicleItems(data) {
 
 function initItems() {
    var items = document.querySelectorAll(".item");
-   var homePage = document.querySelector("#home-page");
+   var homePage = document.querySelector("#route-calc");
 
    setTimeout(() => {
       loadIndexPage(homePage);

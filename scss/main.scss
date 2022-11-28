@@ -6,6 +6,8 @@
 @use "./base/header";
 @use "./base/footer";
 
+// pages
+@use "./pages/route-calc";
 
 // abstracts
 @use "./abstracts/variables" as vars;
