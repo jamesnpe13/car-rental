@@ -1,8 +1,7 @@
 window.addEventListener("DOMContentLoaded", main);
 
 function main() {
-   // load vehicle data json
-   fetchVehicleData();
+  
 
    document.addEventListener("dataLoaded", (e) => {
       // create vehicle items in list
@@ -15,19 +14,19 @@ function main() {
    window.scrollTo(0, 1);
 }
 
-async function fetchVehicleData() {
-   const vehicleDataURL = "./json/vehicles.json";
-   var response = await fetch(vehicleDataURL);
-   var data = await response.json();
+// async function fetchVehicleData() {
+//    const vehicleDataURL = "./json/vehicles.json";
+//    var response = await fetch(vehicleDataURL);
+//    var data = await response.json();
 
-   const dataLoaded = new CustomEvent("dataLoaded", {
-      detail: {
-         vehicleData: data,
-      },
-   });
+//    const dataLoaded = new CustomEvent("dataLoaded", {
+//       detail: {
+//          vehicleData: data,
+//       },
+//    });
 
-   document.dispatchEvent(dataLoaded);
-}
+//    document.dispatchEvent(dataLoaded);
+// }
 
 function createVehicleItems(data) {
    var vehicles = data.vehicles;
