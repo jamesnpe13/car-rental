@@ -20,22 +20,18 @@
             <!-- nav -->
             <nav>
                <div class="icon-button">
-                  <img src="./images/icons/back-icon.svg" alt="" class="icon-image" />
+                  <i class="fa-solid fa-arrow-left"></i>
                </div>
 
                <h3>Vehicles</h3>
 
                <div class="icon-button">
-                  <div class="bars-container">
-                     <div class="bars"></div>
-                     <div class="bars"></div>
-                     <div class="bars"></div>
-                  </div>
+                  <i class="fa-solid fa-bars"></i>
                </div>
             </nav>
 
             <!-- filter -->
-            <div class="filter-container">
+            <!-- <div class="filter-container">
                <div class="button-container">
                   <span>Filter</span>
 
@@ -43,7 +39,7 @@
                      <img src="./images/icons/filter-icon.svg" alt="" />
                   </div>
                </div>
-            </div>
+            </div> -->
          </header>
          <!--=======================================================
                                     MAIN SECTION 
@@ -59,40 +55,14 @@
             </div>
          </section>
          <!-- page end -->
+         <!--=======================================================
+                                    ROUTE CALC 
+         =========================================================-->
 
-         <!-- page -->
-         <section id="page-2">
-            <div class="box-container white">
-               <div class="content-container">
-                  <button class="button primary"><span>Button</span></button>
-                  <button class="button secondary"><span>Button</span></button>
-                  <button class="button destructive"><span>Button</span></button>
-               </div>
-            </div>
-            <div class="box-container white">
-               <div class="bar"><span>Label</span></div>
-               <div class="content-container">
-                  <button class="button primary"><span>Button</span></button>
-                  <button class="button secondary"><span>Button</span></button>
-                  <button class="button destructive"><span>Button</span></button>
-               </div>
-            </div>
-         </section>
-         <!-- page end -->
-         <!-- ======================================================== -->
-         <!-- ======================================================== -->
-         <!-- ======================================================== -->
-         <!-- ======================================================== -->
          <!-- page -->
          <section class="" id="route-calc">
             <!-- map -->
             <div id="map"></div>
-            <!-- text container -->
-            <div class="map-text-container">
-               <h4 class="header4">Travel route distance</h4>
-
-               <span class="total-distance">0km</span>
-            </div>
 
             <!-- waypoints -->
             <div class="map-input-container">
@@ -107,22 +77,19 @@
                   <button class="add-waypoint-button hidden"><span>Add</span></button>
                </div>
             </div>
-         </section>
-         <!-- page end -->
-         <!-- ======================================================== -->
-         <!-- ======================================================== -->
-         <!-- ======================================================== -->
-         <!-- ======================================================== -->
-         <!-- page -->
-         <section class="" id="target-page">
-            <div class="box-container blank">
-               <h1>page 4</h1>
+            <!-- text container -->
+            <div class="map-text-container">
+               <h4 class="header4">Travel route distance</h4>
+
+               <span class="total-distance">0km</span>
             </div>
          </section>
          <!-- page end -->
       </div>
+
       <!-- script -->
       <script src="./js/script.js"></script>
+      <script src="./js/vehicles.js"></script>
       <!-- maps api and libraries -->
 
       <script src="./js/route-calc.js"></script>

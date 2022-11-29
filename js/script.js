@@ -11,6 +11,8 @@ function main() {
       // item button click listener
       initItems();
    });
+
+   window.scrollTo(0, 1);
 }
 
 async function fetchVehicleData() {
@@ -30,33 +32,34 @@ async function fetchVehicleData() {
 function createVehicleItems(data) {
    var vehicles = data.vehicles;
    const itemList = document.querySelector(".item-list");
+   if (vehicles) {
+      for (var vehicle of vehicles) {
+         var item = document.createElement("div");
+         var thumbnail = document.createElement("img");
+         var textContainer = document.createElement("div");
+         var nameText = document.createElement("h4");
+         var descriptionText = document.createElement("span");
+         var bar = document.createElement("div");
+         var arrow = document.createElement("img");
 
-   for (var vehicle of vehicles) {
-      var item = document.createElement("div");
-      var thumbnail = document.createElement("img");
-      var textContainer = document.createElement("div");
-      var nameText = document.createElement("h4");
-      var descriptionText = document.createElement("span");
-      var bar = document.createElement("div");
-      var arrow = document.createElement("img");
+         item.className = "item";
+         thumbnail.className = "image-thumbnail";
+         textContainer.className = "text-container";
+         bar.className = "bar";
 
-      item.className = "item";
-      thumbnail.className = "image-thumbnail";
-      textContainer.className = "text-container";
-      bar.className = "bar";
+         itemList.appendChild(item);
+         item.appendChild(thumbnail);
+         item.appendChild(textContainer);
+         item.appendChild(bar);
+         textContainer.appendChild(nameText);
+         textContainer.appendChild(descriptionText);
+         bar.appendChild(arrow);
 
-      itemList.appendChild(item);
-      item.appendChild(thumbnail);
-      item.appendChild(textContainer);
-      item.appendChild(bar);
-      textContainer.appendChild(nameText);
-      textContainer.appendChild(descriptionText);
-      bar.appendChild(arrow);
-
-      thumbnail.src = vehicle.img_url;
-      arrow.src = "./images/icons/back-icon.svg";
-      nameText.textContent = vehicle.make + " " + vehicle.model;
-      descriptionText.textContent = `$${vehicle.rate}/km`;
+         thumbnail.src = vehicle.img_url;
+         arrow.src = "./images/icons/back-icon.svg";
+         nameText.textContent = vehicle.make + " " + vehicle.model;
+         descriptionText.textContent = `$${vehicle.rate}/km`;
+      }
    }
 }
 

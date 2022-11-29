@@ -118,6 +118,12 @@ function initMap() {
    directionsService = new google.maps.DirectionsService();
    directionsRenderer = new google.maps.DirectionsRenderer({
       draggable: false,
+      suppressMarkers: true,
+      polylineOptions: {
+         strokeColor: "#cfff55",
+         strokeOpacity: 1.0,
+         strokeWeight: 5,
+      },
    });
    directionsRenderer.setMap(map);
 }
@@ -139,6 +145,13 @@ function validateInput(e) {
       return false;
    }
 }
+
+// hide dropdown on scroll
+const inputContainer = document.querySelector(".map-input-container");
+inputContainer.addEventListener("scroll", () => {
+   var dropdown = document.querySelector(".pac-container");
+   dropdown.style.display = "none";
+});
 
 /*====================================================================
                      WAYPOINTS
@@ -254,9 +267,8 @@ function updateMapUI(response) {
    var totalDistanceText;
    for (var leg of routeLegsArray) {
       totalDistance += leg.distance.value;
-      totalDistanceText = totalDistance / 1000 + "km";
+      totalDistanceText = (totalDistance / 1000).toFixed(0) + "km";
    }
    totalDistanceDisplay.textContent = totalDistanceText;
-
    directionsRenderer.setDirections(response);
 }

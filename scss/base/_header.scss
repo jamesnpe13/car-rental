@@ -2,7 +2,7 @@
 @use "../abstracts/variables" as vars;
 @use "../abstracts/typography" as type;
 
-$header-height: 90px;
+$header-height: 50px;
 
 header {
    z-index: 100;
@@ -11,9 +11,13 @@ header {
    position: fixed;
    top: 0;
    left: 0;
-   display: grid;
-   grid-template-rows: 2fr 1fr;
+   // display: grid;
+   // grid-template-rows: 2fr 1fr;
    box-shadow: 0 0 15px rgba(0, 0, 0, 0.363);
+   i {
+      color: white;
+      scale: 1.2;
+   }
 
    nav {
       background-color: cols.$secondary-color;
@@ -21,6 +25,7 @@ header {
       justify-content: space-between;
       align-items: center;
       padding-inline: vars.$inline-padding;
+      height: 100%;
 
       h3 {
          color: white;

@@ -3,14 +3,21 @@
 
 #route-calc {
    gap: 10px;
-   overflow-y: scroll;
 }
 
 #map {
    min-height: 250px;
    min-width: 100%;
    border-radius: vars.$border-radius-1;
+
+   .gm-bundled-control .gmnoprint {
+      display: block;
+   }
+   .gmnoprint:not(.gm-bundled-control) {
+      display: none;
+   }
 }
+
 .map-text-container {
    display: flex;
    justify-content: space-between;
@@ -35,6 +42,7 @@
    background-color: white;
    padding: 20px;
    border-radius: vars.$border-radius-2;
+   overflow-y: scroll;
 
    .waypoint-container {
       display: flex;
@@ -49,6 +57,7 @@
          font-size: 0.8em;
          padding: 10px 20px;
          display: flex;
+         gap: 10px;
          justify-content: space-between;
          align-items: center;
          border: 1px solid $waypoint-color;
