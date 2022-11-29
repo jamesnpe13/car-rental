@@ -87,23 +87,23 @@
          <section class="" id="route-calc">
             <!-- map -->
             <div id="map"></div>
+            <!-- text container -->
+            <div class="map-text-container">
+               <h4 class="header4">Travel route distance</h4>
+
+               <span class="total-distance">0km</span>
+            </div>
 
             <!-- waypoints -->
             <div class="map-input-container">
-               <div class="text-container">
-                  <h4 class="header4">Travel route</h4>
-
-                  <span class="total-distance">15km</span>
-               </div>
-
                <div class="waypoint-container">
-                  <div class="map-waypoint" data-value="Waypoint value">
-                     <span>Start/end: Car rental address</span>
+                  <div class="map-waypoint startend" data-value="Waypoint value">
+                     <span>Start/end: City Road, Auckland</span>
                   </div>
                </div>
 
                <div class="new-waypoint-container">
-                  <input type="text" class="map-input-text" placeholder="Enter location" />
+                  <input type="text" class="map-input-text" placeholder="Enter destination" />
                   <button class="add-waypoint-button hidden"><span>Add</span></button>
                </div>
             </div>
@@ -126,6 +126,6 @@
       <!-- maps api and libraries -->
 
       <script src="./js/route-calc.js"></script>
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgSAtjlaYWfWWMUWsK5ud455V_YVhi7Z4&callback=initMap&libraries=&v=weekly"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgSAtjlaYWfWWMUWsK5ud455V_YVhi7Z4&callback=initMap&libraries=places&v=weekly"></script>
    </body>
 </html>

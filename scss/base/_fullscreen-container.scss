@@ -1,9 +1,10 @@
 .fullscreen-container {
-   height: 100vh;
-   width: 100vw;
+   min-height: 100vh;
+   min-width: 100vw;
    display: flex;
    overflow-x: hidden;
-   overflow-y: scroll;
+   overflow-y: hidden;
    scroll-behavior: auto;
    position: relative;
+   
 }
