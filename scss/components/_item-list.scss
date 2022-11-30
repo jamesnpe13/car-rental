@@ -20,106 +20,129 @@
 @use "../abstracts/colors" as cols;
 @use "../abstracts/typography" as type;
 
-$thumbnail-height-max: 60px;
-$thumbnail-width-max: 100px;
-
-.item-list {
+.item-card-container.thumb {
    width: 100%;
    height: auto;
-   align-items: center;
-}
-
-.item {
-   // box-shadow: 3px 3px 60px rgba(0, 0, 0, 0.158);
-   background-color: white;
-   border-radius: vars.$border-radius-1;
-   user-select: none;
-   cursor: pointer;
-
-   .image-thumbnail {
-      width: $thumbnail-width-max;
-      height: $thumbnail-height-max;
-      object-fit: contain;
-   }
-
-   h4 {
-      font-size: type.$body-fontsize;
-      color: cols.$secondary-color;
-      user-select: none;
-   }
-
-   span {
-      font-size: type.$sub-fontsize;
-      color: cols.$secondary-color;
-      user-select: none;
-   }
-
-
-}
-
-// span
-.item-list.span {
-   width: 95%;
    display: grid;
-   grid-template-columns: 1fr;
+   grid-template-columns: repeat(2, 1fr);
    gap: 15px;
 
-   .item {
-      height: 80px;
-      display: grid;
-      grid-template-columns: auto 1fr auto;
+   .item-card {
+      height: 250px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
       align-items: center;
+      justify-content: flex-end;
+      position: relative;
+      filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.363));
 
-      .image-thumbnail {
-         transform: translateX(-20px);
+      img {
+         height: 100px;
+         width: 130px;
+         object-fit: contain;
+         object-position: bottom;
+         position: absolute;
+         top: 0;
       }
+      .text-container {
+         color: rgb(37, 37, 37);
+         border-radius: vars.$border-radius-1;
+         height: 75%;
+         width: 100%;
+         text-align: center;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         gap: 10px;
+         background-color: white;
+         padding: 20px;
+         padding-top: 35%;
+         padding-bottom: 60px;
 
-      .bar {
+         span {
+            color: rgb(143, 143, 143);
+         }
+      }
+      .accent-bar {
+         height: 40px;
+         width: 100%;
          background-color: cols.$secondary-color;
-         height: 100%;
-         width: 30px;
-         display: grid;
-         place-content: center;
-         margin-left: 10px;
-         border-radius: 0 vars.$border-radius-1 vars.$border-radius-1 0;
+         position: absolute;
+         bottom: 0;
+         border-bottom-right-radius: vars.$border-radius-1;
+         border-bottom-left-radius: vars.$border-radius-1;
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+         padding-inline: 20px;
 
-         img {
-            transform: rotate(180deg);
-            width: 8px;
+         i {
+            color: white;
+            scale: 1.1;
          }
       }
    }
 }
 
-// thumb
-.item-list.thumb {
+.item-card-container.block {
    width: 95%;
+   height: auto;
    display: grid;
    grid-template-columns: 1fr;
-   gap: 15px;
+   gap: 20px;
 
-   .item {
+   .item-card {
       height: 80px;
-      display: grid;
-      grid-template-columns: auto 1fr auto;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
       align-items: center;
+      justify-content: flex-end;
+      position: relative;
+      filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.363));
 
-      .image-thumbnail {
-         transform: translateX(-20px);
-      }
-
-      .bar {
-         background-color: cols.$secondary-color;
+      img {
          height: 100%;
-         width: 30px;
+         width: 100px;
+         object-fit: contain;
+         object-position: left;
+         position: absolute;
+         left: 0;
+      }
+      .text-container {
+         color: rgb(37, 37, 37);
+         border-radius: vars.$border-radius-1;
+         height: 100%;
+         width: 95%;
+         text-align: left;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         gap: 10px;
+         background-color: white;
+         padding: 20px;
+         padding-left: 30%;
+         * {
+            width: 80%;
+         }
+         span {
+            color: rgb(143, 143, 143);
+         }
+      }
+      .accent-bar {
+         width: 50px;
+         height: 100%;
+         background-color: cols.$secondary-color;
+         position: absolute;
+         border-top-right-radius: vars.$border-radius-1;
+         border-bottom-right-radius: vars.$border-radius-1;
          display: grid;
          place-content: center;
-         margin-left: 10px;
-         border-radius: 0 vars.$border-radius-1 vars.$border-radius-1 0;
 
-         img {
-            transform: rotate(180deg);
-            width: 8px;
+         i {
+            color: white;
+            scale: 1.1;
          }
       }
    }
