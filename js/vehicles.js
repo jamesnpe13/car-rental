@@ -104,7 +104,7 @@ var filters = {
 document.addEventListener("itemCardsCreate", filterVehicles);
 
 function filterVehicles() {
-   const itemCards = document.querySelectorAll(".item-card");
+   var itemCards = document.querySelectorAll(".item-card");
    var allVehiclesArray = getAllVehicles();
 
    // hide all cards
