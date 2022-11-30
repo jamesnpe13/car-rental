@@ -97,8 +97,8 @@ window.onclick = () => {
 
 // filtering
 var filters = {
-   persons: 2,
-   days: 2,
+   persons: prompt("How many people?"),
+   days: prompt("How many days?"),
 };
 
 document.addEventListener("itemCardsCreate", filterVehicles);
