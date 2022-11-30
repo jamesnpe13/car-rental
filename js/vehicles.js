@@ -3,7 +3,7 @@ var vehicleData = {};
 document.addEventListener("DOMContentLoaded", fetchVehicleData);
 // fetch local json
 async function fetchVehicleData() {
-   const dataURL = "../json/vehicles.json";
+   var dataURL = "../car-rental/json/vehicles.json";
    var response = await fetch(dataURL);
 
    // create vehicle data object
@@ -104,7 +104,7 @@ var filters = {
 document.addEventListener("itemCardsCreate", filterVehicles);
 
 function filterVehicles() {
-   const itemCards = document.querySelectorAll(".item-card");
+   var itemCards = document.querySelectorAll(".item-card");
    var allVehiclesArray = getAllVehicles();
 
    // hide all cards
