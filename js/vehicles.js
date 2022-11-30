@@ -3,7 +3,7 @@ var vehicleData = {};
 document.addEventListener("DOMContentLoaded", fetchVehicleData);
 // fetch local json
 async function fetchVehicleData() {
-   var dataURL = "../json/vehicles.json";
+   var dataURL = "../car-rental/json/vehicles.json";
    var response = await fetch(dataURL);
 
    // create vehicle data object
