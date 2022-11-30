@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", fetchVehicleData);
 // fetch local json
 async function fetchVehicleData() {
    const dataURL = "../json/vehicles.json";
+//    
+//    
    var response = await fetch(dataURL);
    var data = await response.json();
 
