@@ -1,6 +1,6 @@
 var vehicleData = {};
 
-window.addEventListener("load", fetchVehicleData);
+document.addEventListener("DOMContentLoaded", fetchVehicleData);
 // fetch local json
 async function fetchVehicleData() {
    const dataURL = "../json/vehicles.json";
