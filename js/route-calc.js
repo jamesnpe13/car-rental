@@ -271,4 +271,16 @@ function updateMapUI(response) {
    }
    totalDistanceDisplay.textContent = totalDistanceText;
    directionsRenderer.setDirections(response);
+
+   // update cost text
+   const totalCostDisplay = document.querySelector(".total-fuel-cost");
+   var totalFuelCost = ((totalDistance / 1000) * userObject.selected_vehicle.fuel_cost).toFixed(0);
+   console.log(totalDistance);
+   console.log(userObject.selected_vehicle.fuel_cost);
+   userObject.petrol_cost = totalFuelCost;
+   totalCostDisplay.textContent = `$${userObject.petrol_cost}`;
 }
+
+document.querySelector("#payment-button").addEventListener("click", () => {
+   updatePaymentUI();
+});

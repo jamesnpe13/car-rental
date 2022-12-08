@@ -1,9 +1,16 @@
 var vehicleData = {};
 
+// var filters = {
+//    persons: 3,
+//    days: 5,
+// };
+
+var filterMatchArray = [];
+
 document.addEventListener("DOMContentLoaded", fetchVehicleData);
 // fetch local json
 async function fetchVehicleData() {
-   var dataURL = "../car-rental/json/vehicles.json";
+   const dataURL = "../json/vehicles.json";
    var response = await fetch(dataURL);
 
    // create vehicle data object
@@ -15,12 +22,6 @@ async function fetchVehicleData() {
 
    // assign vehicle ID
    assignVehicleID();
-
-   // create vehicle items
-   createVehicleItems();
-
-   console.log("JSON LOADED", response.ok, vehicleData);
-   // console.table(getAllVehicles());
 }
 
 // assign vehicle ID
@@ -42,12 +43,6 @@ function assignVehicleID() {
    xlVehicles.forEach((item) => {
       item.vehicle_id = window.crypto.randomUUID();
    });
-}
-function tableData() {
-   console.table(vehicleData.motorbikes);
-   console.table(vehicleData.small_vehicles);
-   console.table(vehicleData.large_vehicles);
-   console.table(vehicleData.extra_large_vehicles);
 }
 
 function getAllVehicles() {
@@ -71,12 +66,12 @@ function getAllVehicles() {
 
 // create vehicle cards
 
-function createVehicleItems() {
+function createVehicleItems(array) {
    var allVehiclesArray = getAllVehicles();
    const itemCardContainer = document.querySelector(".item-card-container");
 
-   for (var item of allVehiclesArray) {
-      itemCardContainer.innerHTML += `<div class="item-card" data-id="${item.vehicle_id}"><img src="${item.img_url}" alt="" /><div class="text-container"><h4>${item.model}</h4><span>${item.class}</span></div><div class="accent-bar"><i class="fa-solid fa-arrow-right"></i></div></div>`;
+   for (var item of array) {
+      itemCardContainer.innerHTML += `<div class="splide__slide item-card" data-id="${item.vehicle_id}"><img src="${item.img_url}" alt="" /></div>`;
    }
 
    // dispatch event
@@ -87,43 +82,69 @@ function createVehicleItems() {
 // toggle list view
 const itemCardContainer = document.querySelector(".item-card-container");
 
-window.onclick = () => {
-   if (itemCardContainer.classList.contains("block")) {
-      itemCardContainer.classList.replace("block", "thumb");
-   } else {
-      itemCardContainer.classList.replace("thumb", "block");
-   }
-};
+// filter selection screen
+const sliders = document.querySelectorAll(".filter-page");
+
+sliders.forEach((item) => {
+   const input = item.querySelector('input[type="range"]');
+   const label = input.previousElementSibling;
+   const nextButton = document.querySelector("#filter-next");
+
+   label.textContent = input.value;
+
+   // slider dynamic label
+   input.addEventListener("input", () => {
+      label.textContent = input.value;
+   });
+
+   // next filter page
+   nextButton.addEventListener("click", () => {
+      document.querySelector("#filter-2").scrollIntoView();
+   });
+});
+
+// update filter
+const saveFilterButton = document.querySelector("#filter-save");
+
+saveFilterButton.addEventListener("click", () => {
+   const personsCount = document.querySelector("#persons-count");
+   const daysSlider = document.querySelector("#days-count");
+
+   userObject.filters.persons = personsCount.value;
+   userObject.filters.days = daysSlider.value;
+
+   filterVehicles();
+});
 
 // filtering
-var filters = {
-   persons: prompt("How many people?"),
-   days: prompt("How many days?"),
-};
-
-document.addEventListener("itemCardsCreate", filterVehicles);
 
 function filterVehicles() {
-   var itemCards = document.querySelectorAll(".item-card");
+   const itemCards = document.querySelectorAll(".item-card");
    var allVehiclesArray = getAllVehicles();
+   filterMatchArray = [];
 
-   // hide all cards
-   itemCards.forEach((item) => {
-      item.style.display = "none";
-   });
+   // delete existing itemCards
+   if (itemCards.length > 0) {
+      for (var item of itemCards) {
+         item.remove();
+         console.log("deleted");
+      }
+   } else {
+      console.log("no existing items");
+   }
 
-   // show all cards that match filter
+   // find filter match
 
-   itemCards.forEach((item) => {
-      allVehiclesArray.forEach((vehicle) => {
-         if (item.getAttribute("data-id") == vehicle.vehicle_id) {
-            if (filters.persons <= vehicle.seats && filters.days >= vehicle.min_days && filters.days <= vehicle.max_days) {
-               console.log("match");
-               item.style.display = "flex";
-            } else {
-               console.log("no match");
-            }
-         }
-      });
-   });
+   for (var vehicle of allVehiclesArray) {
+      if (userObject.filters.persons <= vehicle.seats && userObject.filters.days >= vehicle.min_days && userObject.filters.days <= vehicle.max_days) {
+         filterMatchArray.push(vehicle);
+      }
+   }
+
+   console.table(filterMatchArray);
+   createVehicleItems(filterMatchArray);
 }
+
+document.getElementById("goto-garage").addEventListener("click", () => {
+   displayVehicleDetails(userObject.selected_vehicle);
+});

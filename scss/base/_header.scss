@@ -7,10 +7,11 @@ $header-height: 50px;
 header {
    z-index: 100;
    height: $header-height;
-   width: 100%;
+   width: min(100vw, vars.$fullscreen-width);
    position: fixed;
    top: 0;
-   left: 0;
+   left: 50%;
+   transform: translateX(-50%);
    // display: grid;
    // grid-template-rows: 2fr 1fr;
    box-shadow: 0 0 15px rgba(0, 0, 0, 0.363);

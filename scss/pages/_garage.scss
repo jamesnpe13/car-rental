@@ -1,0 +1,85 @@
+#garage {
+   display: grid;
+   place-items: center;
+   .content-container {
+      transform: translateY(-5%);
+      position: relative;
+      width: 100%;
+      height: 580px;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      & > img {
+         position: absolute;
+         top: 0;
+         right: 20px;
+         width: 65%;
+         aspect-ratio: 4 / 2.5;
+         object-fit: contain;
+         object-position: bottom;
+      }
+
+      .text-container {
+         box-shadow: 3px 3px 60px rgba(0, 0, 0, 0.158);
+         padding: 30px;
+         padding-top: 100px;
+         border-radius: 10px;
+         background-color: white;
+         height: 505px;
+         height: auto;
+         display: flex;
+         justify-content: flex-end;
+         flex-direction: column;
+
+         .breakline {
+            margin-block: 20px;
+         }
+
+         h4 {
+            margin-bottom: 20px;
+            font-size: 1.6em;
+         }
+
+         & > span {
+            color: rgb(179, 179, 179);
+         }
+
+         .icon-container {
+            height: auto;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .icon {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               gap: 10px;
+               color: rgb(179, 179, 179);
+            }
+         }
+         .price-container {
+            margin-top: 20px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            width: max-content;
+            align-self: flex-end;
+
+            .vehicle-cost {
+               font-size: 2em;
+               font-weight: 600;
+               line-height: 1em;
+               text-align: center;
+            }
+            .per-day {
+               line-height: 0.9em;
+               text-align: center;
+            }
+         }
+      }
+   }
+}

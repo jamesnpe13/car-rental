@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <style>
+      body {
+         height: 100vh;
+         display: flex;
+         gap: 20px;
+      }
+      div {
+         width: 80px;
+         height: 80px;
+         background-color: red;
+         transition: 0.4s all ease-in-out;
+      }
+
+      .hidden {
+         opacity: 0;
+         transform: translateY(50%);
+      }
+   </style>
+   <body>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+
+      <script>
+         document.addEventListener("click", () => {
+            var revealingItems = document.querySelectorAll("div");
+
+            var i = 0;
+
+            var int = setInterval(() => {
+               if (revealingItems[i].classList.contains("hidden")) {
+                  revealingItems[i].classList.remove("hidden");
+               } else {
+                  revealingItems[i].classList.add("hidden");
+               }
+
+               i++;
+            }, 20);
+
+            if (i >= int) {
+               clearInterval(int);
+            }
+         });
+      </script>
+   </body>
+</html>

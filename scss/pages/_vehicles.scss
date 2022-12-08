@@ -1,3 +1,142 @@
+@use "../abstracts/colors" as cols;
+
 #vehicles {
    overflow-y: scroll;
+   padding-inline: 0;
+   justify-content: flex-end;
+   min-height: 100%;
+   position: relative;
+   padding: 20px;
+
+   .splide-container {
+      // transform: translateY(-20%);
+
+      position: absolute;
+      top: 45%;
+      transform: translateY(-45%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      z-index: 10;
+   }
+   .splide {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+
+      .gradient-box {
+         z-index: 1;
+         width: 100%;
+         height: 100%;
+         display: flex;
+         justify-content: space-between;
+         position: absolute;
+         user-select: none;
+         pointer-events: none;
+
+         div {
+            background: linear-gradient(090deg, rgba(238, 238, 238, 0.829), rgba(255, 255, 255, 0));
+            width: 20%;
+            height: 100%;
+         }
+
+         div:last-of-type {
+            transform: scaleX(-100%);
+         }
+      }
+
+      .splide__pagination {
+         display: none;
+         height: auto;
+         position: unset;
+         top: 0;
+      }
+
+      .splide__slide {
+         width: 100%;
+         height: auto;
+         display: grid;
+         place-items: center;
+         justify-content: center;
+         align-items: center;
+
+         img {
+            width: 90%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+         }
+      }
+
+      .splide__arrows {
+         display: none;
+      }
+
+      .my-carousel-progress {
+         background: transparent;
+         width: 100%;
+         padding-inline: 20px;
+         align-self: center;
+         margin-top: 40px;
+      }
+
+      .my-carousel-progress-bar {
+         background: cols.$primary-color;
+         height: 4px;
+         transition: width 400ms ease;
+         width: 0;
+         border-radius: 10px;
+      }
+   }
+
+   .text-container {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+      opacity: 1;
+      scale: 1;
+      transition: 0.3s all cubic-bezier(0.32, 1.72, 0.2, 0.62);
+      transform: translate(0, 0);
+
+      .model {
+         font-size: 1.6em;
+         line-height: 1em;
+         text-align: center;
+      }
+      .class {
+         font-size: 0.9em;
+         color: rgb(131, 131, 131);
+         line-height: 1em;
+         margin-bottom: 20px;
+         text-align: center;
+      }
+      .price-container {
+         background-color: white;
+         padding: 20px 30px;
+         border-radius: 8px;
+         box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.158);
+         position: relative;
+         overflow: hidden;
+
+         .cost {
+            font-size: 2em;
+            font-weight: 600;
+            line-height: 1em;
+            text-align: center;
+         }
+         .per-day {
+            line-height: 0.9em;
+            text-align: center;
+         }
+      }
+   }
+   .text-container.hidden {
+      opacity: 0;
+      scale: 0.5;
+      transform: translate(0, 50%);
+      filter: blur(10px);
+   }
 }

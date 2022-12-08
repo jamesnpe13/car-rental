@@ -7,8 +7,12 @@
 @use "./base/footer";
 
 // pages
-@use "./pages/route-calc";
+@use "./pages/filter";
 @use "./pages/vehicles";
+@use "./pages/route-calc";
+@use "./pages/garage";
+@use "./pages/payment";
+@use "./pages/login";
 
 // abstracts
 @use "./abstracts/variables" as vars;
@@ -19,6 +23,7 @@
 @use "./components/box-container";
 @use "./components/buttons";
 @use "./components/item-list";
+@use "./components/splide";
 
 // temporary
 @use "./temp/temp";

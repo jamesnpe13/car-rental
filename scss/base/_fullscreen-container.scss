@@ -1,10 +1,15 @@
+@use "../abstracts/variables" as vars;
 .fullscreen-container {
-   min-height: 100vh;
-   min-width: 100vw;
+   // min-height: 100vh;
+   // min-width: 100vw;
+   // max-height: 850px;
+   // max-width: 400px;
+   width: min(vars.$fullscreen-width, 100vw);
+   height: min(vars.$fullscreen-height, 100vh);
    display: flex;
    overflow-x: hidden;
    overflow-y: hidden;
-   scroll-behavior: auto;
+   scroll-behavior: smooth;
    position: relative;
-   
+   background-color: rgb(238, 238, 238);
 }

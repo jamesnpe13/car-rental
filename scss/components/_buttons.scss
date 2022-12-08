@@ -23,6 +23,13 @@
 @use "../abstracts/colors" as cols;
 @use "../abstracts/typography" as type;
 
+.button-container {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
 // span buttons (default)
 .button {
    width: 100%;
@@ -34,17 +41,19 @@
    cursor: pointer;
    transition: 0.2s;
 
+   color: white;
+   font-size: type.$button-fontsize;
+
    span {
-      color: white;
-      font-size: type.$button-fontsize;
+      pointer-events: none;
    }
 
-   &:hover,
-   &:focus {
-      scale: 1.02;
-      opacity: 0.9;
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.351);
-   }
+   // &:hover,
+   // &:focus {
+   //    scale: 1.02;
+   //    opacity: 0.9;
+   //    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.351);
+   // }
 }
 
 .button.primary {
@@ -53,9 +62,13 @@
 .button.secondary {
    background-color: cols.$secondary-color;
 }
+.button.tertiary {
+   background-color: cols.$tertiary-color;
+}
 .button.destructive {
    border: 2px solid cols.$destructive-color;
    background-color: transparent;
+
    span {
       color: cols.$destructive-color;
    }
@@ -91,5 +104,14 @@ $icon-img-max: 25px;
          height: 2px;
          width: 100%;
       }
+   }
+}
+
+.bottom-align {
+   position: absolute;
+   bottom: 20px;
+   width: calc(100% - 40px);
+
+   &.button-container {
    }
 }

@@ -48,8 +48,8 @@
       .text-container {
          color: rgb(37, 37, 37);
          border-radius: vars.$border-radius-1;
-         height: 75%;
          width: 100%;
+         height: calc(100% - 50px);
          text-align: center;
          display: flex;
          flex-direction: column;
@@ -57,11 +57,15 @@
          gap: 10px;
          background-color: white;
          padding: 20px;
-         padding-top: 35%;
+         padding-top: 70px;
          padding-bottom: 60px;
 
+         h4 {
+            font-size: 1em;
+         }
          span {
             color: rgb(143, 143, 143);
+            font-size: 0.8em;
          }
       }
       .accent-bar {
@@ -85,65 +89,37 @@
    }
 }
 
-.item-card-container.block {
-   width: 95%;
-   height: auto;
-   display: grid;
-   grid-template-columns: 1fr;
-   gap: 20px;
 
-   .item-card {
-      height: 80px;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-end;
-      position: relative;
-      filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.363));
+// .item-card-container.splide__list {
+//    .item-card {
+//       // img {
+//       //    height: 100%;
+//       //    width: 100px;
+//       //    object-fit: contain;
+//       //    object-position: left;
+//       //    position: absolute;
+//       //    left: 0;
+//       // }
+   
+//    }
+// }
 
-      img {
-         height: 100%;
-         width: 100px;
-         object-fit: contain;
-         object-position: left;
-         position: absolute;
-         left: 0;
-      }
-      .text-container {
-         color: rgb(37, 37, 37);
-         border-radius: vars.$border-radius-1;
-         height: 100%;
-         width: 95%;
-         text-align: left;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         gap: 10px;
-         background-color: white;
-         padding: 20px;
-         padding-left: 30%;
-         * {
-            width: 80%;
-         }
-         span {
-            color: rgb(143, 143, 143);
-         }
-      }
-      .accent-bar {
-         width: 50px;
-         height: 100%;
-         background-color: cols.$secondary-color;
-         position: absolute;
-         border-top-right-radius: vars.$border-radius-1;
-         border-bottom-right-radius: vars.$border-radius-1;
-         display: grid;
-         place-content: center;
 
-         i {
-            color: white;
-            scale: 1.1;
-         }
-      }
-   }
-}
+   // .text-container {
+   //       outline: 1px solid red;
+   //       color: rgb(37, 37, 37);
+
+   //       h4 {
+   //          font-size: 1em;
+   //       }
+   //       span {
+   //          color: rgb(143, 143, 143);
+   //          font-size: 0.8em;
+   //       }
+
+   //       h4,
+   //       span {
+   //          width: calc(100% - 80px);
+   //          margin: 0;
+   //       }
+   //    }

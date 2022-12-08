@@ -1,384 +1,520 @@
 {
+   "fuel_cost_nz": 2.7,
    "motorbikes": [
       {
          "model": "Honda CB150R",
-         "img_url": "../car-rental/images/vehicles/motorbikes/Honda CB150R.png",
+         "img_url": "../images/vehicles/motorbikes/Honda CB150R.png",
          "seats": 1,
          "class": "Motorbike",
-         "fuel_cost": 0.037,
+         "fuel_cost": 0.1,
          "rental_cost": 109,
          "min_days": 1,
          "max_days": 5,
-         "transmission": "Manual"
+         "transmission": "MT",
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+
+         "mileage": 60,
+         "drive_type": "N/A"
       },
       {
          "model": "Honda Verza 150",
-         "img_url": "../car-rental/images/vehicles/motorbikes/Honda Verza 150.png",
+         "img_url": "../images/vehicles/motorbikes/Honda Verza 150.png",
          "seats": 1,
          "class": "Motorbike",
-         "fuel_cost": 0.037,
+         "fuel_cost": 0.1,
          "rental_cost": 109,
          "min_days": 1,
          "max_days": 5,
-         "transmission": "Manual"
+         "transmission": "MT",
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+
+         "mileage": 55,
+         "drive_type": "N/A"
       },
       {
          "model": "Duke KTM 200",
-         "img_url": "../car-rental/images/vehicles/motorbikes/KTM 200 Duke.png",
+         "img_url": "../images/vehicles/motorbikes/KTM 200 Duke.png",
          "seats": 1,
          "class": "Motorbike",
-         "fuel_cost": 0.037,
+         "fuel_cost": 0.1,
          "rental_cost": 109,
          "min_days": 1,
          "max_days": 5,
-         "transmission": "Manual"
+         "transmission": "MT",
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+
+         "mileage": 120,
+         "drive_type": "N/A"
       },
       {
          "model": "Yamaha NVX 155",
-         "img_url": "../car-rental/images/vehicles/motorbikes/Yamaha NVX 155.png",
+         "img_url": "../images/vehicles/motorbikes/Yamaha NVX 155.png",
          "seats": 1,
          "class": "Motorbike",
-         "fuel_cost": 0.037,
+         "fuel_cost": 0.1,
          "rental_cost": 109,
          "min_days": 1,
          "max_days": 5,
-         "transmission": "Manual"
+         "transmission": "MT",
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+
+         "mileage": 99,
+         "drive_type": "N/A"
       },
       {
          "model": "Yamaha YZF-R1",
-         "img_url": "../car-rental/images/vehicles/motorbikes/Yamaha YZF-R1.png",
+         "img_url": "../images/vehicles/motorbikes/Yamaha YZF-R1.png",
          "seats": 1,
          "class": "Motorbike",
-         "fuel_cost": 0.037,
+         "fuel_cost": 0.1,
          "rental_cost": 109,
          "min_days": 1,
          "max_days": 5,
-         "transmission": "Manual"
+         "transmission": "MT",
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 87,
+         "drive_type": "N/A"
       }
    ],
    "small_vehicles": [
       {
          "model": "2018 Audi TT Coupe",
-         "img_url": "../car-rental/images/vehicles/s-vehicles/2018 Audi TT Coupe.png",
+         "img_url": "../images/vehicles/s-vehicles/2018 Audi TT Coupe.png",
          "seats": 2,
          "class": "Small vehicle",
-         "fuel_cost": 0.085,
+         "fuel_cost": 0.23,
          "rental_cost": 129,
          "min_days": 1,
          "max_days": 10,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 82,
+         "drive_type": "FWD"
       },
       {
          "model": "BMW Z4",
-         "img_url": "../car-rental/images/vehicles/s-vehicles/BMW Z4.png",
+         "img_url": "../images/vehicles/s-vehicles/BMW Z4.png",
          "seats": 2,
          "class": "Small vehicle",
-         "fuel_cost": 0.085,
+         "fuel_cost": 0.23,
          "rental_cost": 129,
          "min_days": 1,
          "max_days": 10,
-         "transmission": "Manual"
+         "transmission": "MT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 102,
+         "drive_type": "FWD"
       },
       {
          "model": "Fiat 124 Spider",
-         "img_url": "../car-rental/images/vehicles/s-vehicles/Fiat 124 Spider.png",
+         "img_url": "../images/vehicles/s-vehicles/Fiat 124 Spider.png",
          "seats": 2,
          "class": "Small vehicle",
-         "fuel_cost": 0.085,
+         "fuel_cost": 0.23,
          "rental_cost": 129,
          "min_days": 1,
          "max_days": 10,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 132,
+         "drive_type": "FWD"
       },
       {
          "model": "Fiat Abarth 595",
-         "img_url": "../car-rental/images/vehicles/s-vehicles/Fiat Abarth 595.png",
+         "img_url": "../images/vehicles/s-vehicles/Fiat Abarth 595.png",
          "seats": 2,
          "class": "Small vehicle",
-         "fuel_cost": 0.085,
+         "fuel_cost": 0.23,
          "rental_cost": 129,
          "min_days": 1,
          "max_days": 10,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 183,
+         "drive_type": "FWD"
       }
    ],
    "large_vehicles": [
       {
          "model": "2006 Toyota Vitz",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/2006 Toyota Vitz.png",
+         "img_url": "../images/vehicles/l-vehicles/2006 Toyota Vitz.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 155,
+         "drive_type": "FWD"
       },
       {
          "model": "2012 Toyota Yaris",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/2012 Toyota Yaris.png",
+         "img_url": "../images/vehicles/l-vehicles/2012 Toyota Yaris.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 66,
+         "drive_type": "FWD"
       },
       {
          "model": "2014 Toyota Corolla",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/2014 Toyota Corolla.png",
+         "img_url": "../images/vehicles/l-vehicles/2014 Toyota Corolla.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 75,
+         "drive_type": "FWD"
       },
       {
          "model": "2015 Toyota Prius",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/2015 Toyota Prius.png",
+         "img_url": "../images/vehicles/l-vehicles/2015 Toyota Prius.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 99,
+         "drive_type": "FWD"
       },
       {
          "model": "2016 Ford Ranger",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/2016 Ford Ranger.png",
+         "img_url": "../images/vehicles/l-vehicles/2016 Ford Ranger.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Manual"
+         "transmission": "MT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 101,
+         "drive_type": "4WD"
       },
       {
          "model": "2017 BMW M2",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/2017 BMW M2.png",
+         "img_url": "../images/vehicles/l-vehicles/2017 BMW M2.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 84,
+         "drive_type": "FWD"
       },
       {
          "model": "2017 Honda Civic",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/2017 Honda Civic.png",
+         "img_url": "../images/vehicles/l-vehicles/2017 Honda Civic.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Manual"
+         "transmission": "MT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 88,
+         "drive_type": "FWD"
       },
       {
          "model": "2017 Toyota Hilux",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/2017 Toyota Hilux.png",
+         "img_url": "../images/vehicles/l-vehicles/2017 Toyota Hilux.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Manual"
+         "transmission": "MT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 127,
+         "drive_type": "4WD"
       },
       {
          "model": "2017 Toyota Prius",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/2017 Toyota Prius.png",
+         "img_url": "../images/vehicles/l-vehicles/2017 Toyota Prius.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 60,
+         "drive_type": "FWD"
       },
       {
          "model": "2018 BMW M3",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/2018 BMW M3.png",
+         "img_url": "../images/vehicles/l-vehicles/2018 BMW M3.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 84,
+         "drive_type": "FWD"
       },
       {
          "model": "2018 Honda Civic",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/2018 Honda Civic.png",
+         "img_url": "../images/vehicles/l-vehicles/2018 Honda Civic.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 98,
+         "drive_type": "FWD"
       },
       {
          "model": "2018 Mitsubishi Triton",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/2018 Mitsubishi Triton.png",
+         "img_url": "../images/vehicles/l-vehicles/2018 Mitsubishi Triton.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 188,
+         "drive_type": "FWD"
       },
       {
          "model": "2018 Toyota Camry Hybrid",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/2018 Toyota Camry Hybrid.png",
+         "img_url": "../images/vehicles/l-vehicles/2018 Toyota Camry Hybrid.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 70,
+         "drive_type": "FWD"
       },
       {
          "model": "2018 Toyota Camry",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/2018 Toyota Camry.png",
+         "img_url": "../images/vehicles/l-vehicles/2018 Toyota Camry.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Manual"
+         "transmission": "MT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 75,
+         "drive_type": "FWD"
       },
       {
          "model": "2018 Toyota Corolla",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/2018 Toyota Corolla.png",
+         "img_url": "../images/vehicles/l-vehicles/2018 Toyota Corolla.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 89,
+         "drive_type": "FWD"
       },
       {
          "model": "2018 Toyota Hilux",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/2018 Toyota Hilux.png",
+         "img_url": "../images/vehicles/l-vehicles/2018 Toyota Hilux.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Manual"
+         "transmission": "MT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 99,
+         "drive_type": "4WD"
       },
       {
          "model": "2018 Toyota Vitz",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/2018 Toyota Vitz.png",
+         "img_url": "../images/vehicles/l-vehicles/2018 Toyota Vitz.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 198,
+         "drive_type": "FWD"
       },
       {
          "model": "2019 Nissan Navara",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/2019 Nissan Navara.png",
+         "img_url": "../images/vehicles/l-vehicles/2019 Nissan Navara.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 91,
+         "drive_type": "4WD"
       },
       {
          "model": "Hyundai HB20",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/Hyundai HB20.png",
+         "img_url": "../images/vehicles/l-vehicles/Hyundai HB20.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 150,
+         "drive_type": "FWD"
       },
       {
          "model": "Suzuki Swift GL",
-         "img_url": "../car-rental/images/vehicles/l-vehicles/Suzuki Swift GL.png",
+         "img_url": "../images/vehicles/l-vehicles/Suzuki Swift GL.png",
          "seats": 5,
          "class": "Large vehicle",
-         "fuel_cost": 0.097,
+         "fuel_cost": 0.26,
          "rental_cost": 144,
          "min_days": 3,
          "max_days": 10,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 154,
+         "drive_type": "FWD"
       }
    ],
    "extra_large_vehicles": [
       {
          "model": "2012 Toyota HiAce",
-         "img_url": "../car-rental/images/vehicles/xl-vehicles/2012 Toyota HiAce.png",
+         "img_url": "../images/vehicles/xl-vehicles/2012 Toyota HiAce.png",
          "seats": 6,
          "class": "Extra-large vehicle",
-         "fuel_cost": 0.17,
+         "fuel_cost": 0.46,
          "rental_cost": 200,
          "min_days": 2,
          "max_days": 15,
-         "transmission": "Manual"
+         "transmission": "MT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 200,
+         "drive_type": "4WD"
       },
       {
          "model": "2014 Toyota Noah",
-         "img_url": "../car-rental/images/vehicles/xl-vehicles/2014 Toyota Noah.png",
+         "img_url": "../images/vehicles/xl-vehicles/2014 Toyota Noah.png",
          "seats": 6,
          "class": "Extra-large vehicle",
-         "fuel_cost": 0.17,
+         "fuel_cost": 0.46,
          "rental_cost": 200,
          "min_days": 2,
          "max_days": 15,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 255,
+         "drive_type": "FWD"
       },
       {
          "model": "2016 Ford Transit",
-         "img_url": "../car-rental/images/vehicles/xl-vehicles/2016 Ford Transit.png",
+         "img_url": "../images/vehicles/xl-vehicles/2016 Ford Transit.png",
          "seats": 6,
          "class": "Extra-large vehicle",
-         "fuel_cost": 0.17,
+         "fuel_cost": 0.46,
          "rental_cost": 200,
          "min_days": 2,
          "max_days": 15,
-         "transmission": "Manual"
+         "transmission": "MT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 180,
+         "drive_type": "4WD"
       },
       {
          "model": "Fiat Ducato",
-         "img_url": "../car-rental/images/vehicles/xl-vehicles/Fiat Ducato.png",
+         "img_url": "../images/vehicles/xl-vehicles/Fiat Ducato.png",
          "seats": 6,
          "class": "Extra-large vehicle",
-         "fuel_cost": 0.17,
+         "fuel_cost": 0.46,
          "rental_cost": 200,
          "min_days": 2,
          "max_days": 15,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 203,
+         "drive_type": "4WD"
       },
       {
          "model": "Prism type-C",
-         "img_url": "../car-rental/images/vehicles/xl-vehicles/Prism type-C.png",
+         "img_url": "../images/vehicles/xl-vehicles/Prism type-C.png",
          "seats": 6,
          "class": "Extra-large vehicle",
-         "fuel_cost": 0.17,
+         "fuel_cost": 0.46,
          "rental_cost": 200,
          "min_days": 2,
          "max_days": 15,
-         "transmission": "Automatic"
+         "transmission": "AT",
+
+         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit corrupti, tempora voluptatum architecto assumenda ut ab fuga expedita perspiciatis?",
+         "mileage": 183,
+         "drive_type": "4WD"
       }
    ]
 }
