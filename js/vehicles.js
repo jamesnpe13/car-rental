@@ -10,7 +10,7 @@ var filterMatchArray = [];
 document.addEventListener("DOMContentLoaded", fetchVehicleData);
 // fetch local json
 async function fetchVehicleData() {
-   const dataURL = "../json/vehicles.json";
+   const dataURL = "https://github.com/jamesnpe13/car-rental/blob/dbfe8b8267a28bd678f6915618906c72adf653d9/json/vehicles.json";
    var response = await fetch(dataURL);
 
    // create vehicle data object
