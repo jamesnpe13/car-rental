@@ -2,6 +2,8 @@
    padding-inline: 40px;
    padding-top: 15vh;
    position: relative;
+   display: flex;
+   flex-direction: column;
 
    .logo-container {
       width: 80%;
